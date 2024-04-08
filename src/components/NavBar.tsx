@@ -18,9 +18,8 @@ export default function NavBar(props: NavBarProps) {
           <li className={active == "escritorio"? classActive : ""}><Link href="/escritorio">Escritório</Link></li>
           <li className={active == "informatica"? classActive : ""}><Link href="/informatica">Informática</Link></li>
         </ul>
-        <div>
+        <div className="flex gap-4">
           <button>Entre/Cadastre-se</button>
-
           <span>Icone-carrinho</span>
         </div>
         <div className="w-16 rounded-full overflow-hidden">
