@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar"
 import { ArrowDownZA } from "lucide-react";
 
 export default function Informatica() {
+  //
     return (
       <main className="flex min-h-screen flex-col items-center">
         <NavBar active="informatica"/>
@@ -9,7 +10,7 @@ export default function Informatica() {
           <h2 className="text-2xl font-semibold">Informática </h2>
           <div id="data">
             <div className="flex justify-between" id="data-row">
-              <span>Informática</span>
+              <span>Informática</span> 
 
               <ArrowDownZA />
             </div>
