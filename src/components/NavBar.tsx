@@ -1,11 +1,15 @@
+
+import { ShoppingCartIcon } from "lucide-react";
 import Link from "next/link";
 
 
 interface NavBarProps{
-  active:"home"|"papelaria"|"escritorio"|"informatica"
+  active:"home"|"papelaria"|"escritorio"|"informatica"|"<ShoppingCartIcon/>"|"Entre/Cadastre-se"
+ 
 }
 export default function NavBar(props: NavBarProps) {
   const {active} = props
+  
   const classActive = "border-yellow-300 border-b-4 pb-2"
   return(
     <nav className="flex justify-between items-center bg-orange-700 w-full px-4 py-2" >
@@ -19,8 +23,8 @@ export default function NavBar(props: NavBarProps) {
           <li className={active == "informatica"? classActive : ""}><Link href="/informatica">Informática</Link></li>
         </ul>
         <div className="flex gap-4">
-          <button>Entre/Cadastre-se</button>
-          <span>Icone-carrinho</span>
+          <button className={active == "Entre/Cadastre-se"? classActive : ""}><Link href="/cadastrologin">Entre/Cadastre-se</Link></button>
+          <button className={active == "<ShoppingCartIcon/>"? classActive : ""}><Link href="/compras">{<ShoppingCartIcon/>}</Link></button>
         </div>
         <div className="w-16 rounded-full overflow-hidden">
           <img src="https://i.pravatar.cc/300" alt="avatar do usuario"/>
