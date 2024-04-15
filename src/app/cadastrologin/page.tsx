@@ -7,9 +7,13 @@ import Link from "next/link";
 import {  RotateCw } from "lucide-react";
 import React from "react";
 
+;
+
 
 
 export default function CadastroLogin() {
+
+
   
     return (
       <main className="flex min-h-screen flex-col items-center">
@@ -30,6 +34,8 @@ export default function CadastroLogin() {
           <SubmitButton />
         </div>
       </form>
+
+      
       </main>
     );
   }

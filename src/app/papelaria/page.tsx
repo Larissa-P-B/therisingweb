@@ -1,8 +1,7 @@
 import NavBar from "@/components/NavBar"
 
-import Link from "next/link";
-import { PapelariaItem } from "./PapelariaItem";
-import { getPapelaria } from "../actions/papelaria/get";
+
+
 import { ArrowDownZA } from "lucide-react";
 
 interface Papelaria{

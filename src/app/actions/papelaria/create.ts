@@ -7,7 +7,10 @@ export async function create(formData: FormData){
     
     const data = {
       nome: formData.get("nome"),
-      icone: "cigarette"
+      cpf:formData.get("cpf"),
+      email:formData.get("email"),
+      senha:formData.get("senha"),
+      
     }
 
     const options = {
