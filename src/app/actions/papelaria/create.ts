@@ -21,7 +21,7 @@ export async function create(formData: FormData){
       }
     }
 
-    const resp = await fetch(`${process.env.API_THERISING}/cadastrologin`, options)
+    const resp = await fetch(`${process.env.API_THERISING}/cadastro`, options)
 
-    if (resp.status == 201) redirect("/cadastrologin")
+    if (resp.status == 201) redirect("/login")
   }

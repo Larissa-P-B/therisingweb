@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 interface NavBarProps{
-  active:"home"|"papelaria"|"escritorio"|"informatica"|"<ShoppingCartIcon/>"|"Entre/Cadastre-se"
+  active:"home"|"papelaria"|"escritorio"|"informatica"|"<ShoppingCartIcon/>"|"Entre/Cadastre-se"|"login"
  
 }
 export default function NavBar(props: NavBarProps) {
@@ -23,7 +23,7 @@ export default function NavBar(props: NavBarProps) {
           <li className={active == "informatica"? classActive : ""}><Link href="/informatica">Informática</Link></li>
         </ul>
         <div className="flex gap-4">
-          <button className={active == "Entre/Cadastre-se"? classActive : ""}><Link href="/cadastrologin">Entre/Cadastre-se</Link></button>
+          <button className={active == "Entre/Cadastre-se"? classActive : ""}><Link href="/cadastro">Entre/Cadastre-se</Link></button>
           <button className={active == "<ShoppingCartIcon/>"? classActive : ""}><Link href="/compras">{<ShoppingCartIcon/>}</Link></button>
         </div>
         <div className="w-16 rounded-full overflow-hidden">

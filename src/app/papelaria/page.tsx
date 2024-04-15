@@ -30,19 +30,7 @@ export default async function Papelaria() {
         </section>
 
         
-        {/* <section className="bg-yellow-400 rounded p-2 m-4 min-w-[500px]">
-          <div className="flex justify-between">
-            <h2 className="text-2xl font-semibold">Papelaria </h2>
-            <Link href="/papelaria/cadernos">Cadernos</Link>
-            </div>
-            <div id="data">
-            {papel.map(function (papelaria) {
-                return <PapelariaItem papelaria={papelaria} />;
-              })}
-            </div>
-           
-          
-        </section>    */}
+       
         
       </main>
     );

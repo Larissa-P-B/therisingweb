@@ -1,3 +1,4 @@
+
 import NavBar from "@/components/NavBar"
 import {  Button, Input } from "@nextui-org/react";
 
@@ -7,11 +8,11 @@ import Link from "next/link";
 import {  RotateCw } from "lucide-react";
 import React from "react";
 
-;
 
 
 
-export default function CadastroLogin() {
+
+export default function Cadastro() {
 
 
   
@@ -28,6 +29,10 @@ export default function CadastroLogin() {
 
 
         <div className="flex justify-around mt-4">
+          <Link href="/login">
+            <Button color="danger" variant="bordered" startContent={<RotateCw />}>Já tem cadastro?</Button>
+
+          </Link>
           <Link href="/">
             <Button color="danger" variant="bordered" startContent={<RotateCw />}>cancelar</Button>
           </Link>
