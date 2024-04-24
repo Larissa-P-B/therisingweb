@@ -2,7 +2,7 @@
 import NavBar from "@/components/NavBar"
 import {  Button, Input } from "@nextui-org/react";
 
-import { create } from "../actions/papelaria/create";
+import { create } from "../actions/actions/cadastro/create";
 import { SubmitButton } from "@/components/SubmitButton";
 import Link from "next/link";
 import {  RotateCw } from "lucide-react";
@@ -39,6 +39,8 @@ export default function Cadastro() {
           <SubmitButton />
         </div>
       </form>
+
+      
 
       
       </main>

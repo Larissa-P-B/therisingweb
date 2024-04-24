@@ -4,6 +4,7 @@ import { Button } from "@nextui-org/react";
 import { Check } from "lucide-react";
 import { useFormStatus } from "react-dom";
 
+
 export function SubmitButton(){
     const { pending } = useFormStatus()
 
@@ -11,5 +12,7 @@ export function SubmitButton(){
         <Button type="submit" color="primary" startContent={<Check />} isLoading={pending}>
             salvar
         </Button>
+
+        
     )
 }

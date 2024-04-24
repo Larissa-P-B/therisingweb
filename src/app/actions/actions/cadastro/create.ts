@@ -23,5 +23,5 @@ export async function create(formData: FormData){
 
     const resp = await fetch(`${process.env.API_THERISING}/cadastro`, options)
 
-    if (resp.status == 201) redirect("/login")
+    if (resp.status == 200) redirect("/login")
   }

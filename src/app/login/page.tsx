@@ -9,6 +9,8 @@ import Link from "next/link";
 export default function Login() {
 
 
+
+
   
     return (
       <main className="flex min-h-screen flex-col items-center">
@@ -19,7 +21,7 @@ export default function Login() {
         
         <Input key="email" variant="bordered" label="Email"name="email"labelPlacement={"outside"}/>
         
-        <Input key="senha" variant="bordered" label="Senha"name="password" labelPlacement={"outside"}/>
+        <Input key="senha" variant="bordered" label="Senha"name="senha" labelPlacement={"outside"}/>
 
 
         <div className="flex justify-around mt-4">
